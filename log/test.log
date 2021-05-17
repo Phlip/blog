@@ -1,0 +1,610 @@
+  [1m[36m (97.6ms)[0m  [1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "image_file_name" varchar, "image_content_type" varchar, "image_file_size" integer(8), "image_updated_at" datetime) [0m
+  [1m[35m (91.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (121.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (93.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20210515181540')
+  [1m[36m (99.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20210515181523')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered photos/index.html.erb within layouts/application (0.5ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 126ms (Views: 98.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered photos/index.html.erb within layouts/application (0.2ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered photos/index.html.erb within layouts/application (1.1ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 15ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered photos/index.html.erb within layouts/application (0.2ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered photos/index.html.erb within layouts/application (0.2ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (11.3ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 3273ms (Views: 3260.7ms | ActiveRecord: 11.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.8ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 165ms (Views: 160.9ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 116ms (Views: 113.5ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 144ms (Views: 142.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 118ms (Views: 115.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 439ms (Views: 410.4ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 137ms (Views: 133.5ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1629ms (Views: 1626.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 119ms (Views: 116.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 120ms (Views: 116.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 118ms (Views: 115.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1360ms (Views: 1357.0ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 122ms (Views: 119.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 126ms (Views: 122.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 125ms (Views: 122.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 118ms (Views: 115.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 105ms (Views: 102.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 339ms (Views: 311.2ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 154ms (Views: 152.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 110ms (Views: 107.5ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 126ms (Views: 123.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 3279ms (Views: 3274.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 269ms (Views: 263.8ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 384ms (Views: 360.9ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 119ms (Views: 115.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 117ms (Views: 114.5ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 125ms (Views: 122.5ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 125ms (Views: 122.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 132ms (Views: 129.4ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 119ms (Views: 116.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 115ms (Views: 112.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 121ms (Views: 118.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 119ms (Views: 115.3ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 116ms (Views: 113.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 102ms (Views: 99.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 116ms (Views: 113.6ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 116ms (Views: 113.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 120ms (Views: 116.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 153ms (Views: 149.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 134ms (Views: 130.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 110ms (Views: 106.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 112ms (Views: 108.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 118ms (Views: 115.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 121ms (Views: 117.4ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 645ms (Views: 619.7ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 199ms (Views: 194.1ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 119ms (Views: 116.6ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.9ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 206ms (Views: 200.5ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 122ms (Views: 118.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 119ms (Views: 116.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 123ms (Views: 119.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 149ms (Views: 145.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 157ms (Views: 154.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 106ms (Views: 103.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 167ms (Views: 163.3ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY created_at[0m
+  Rendered photos/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 121ms (Views: 119.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT  "photos".* FROM "photos"  ORDER BY created_at DESC LIMIT 1[0m
+  Rendered photos/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT  "photos".* FROM "photos"  ORDER BY created_at DESC LIMIT 1[0m
+  Rendered photos/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 1369ms (Views: 1364.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT  "photos".* FROM "photos"  ORDER BY created_at DESC LIMIT 1[0m
+  Rendered photos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 126ms (Views: 121.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT  "photos".* FROM "photos"  ORDER BY created_at DESC LIMIT 1[0m
+  Rendered photos/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 223ms (Views: 216.5ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT  "photos".* FROM "photos"  ORDER BY created_at DESC LIMIT 1[0m
+  Rendered photos/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT  "photos".* FROM "photos"  ORDER BY created_at DESC LIMIT 1[0m
+  Rendered photos/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 107ms (Views: 103.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT  "photos".* FROM "photos"  ORDER BY created_at DESC LIMIT 1[0m
+  Rendered photos/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 122ms (Views: 116.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT  "photos".* FROM "photos"  ORDER BY created_at DESC LIMIT 1[0m
+  Rendered photos/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 539ms (Views: 503.0ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT  "photos".* FROM "photos"  ORDER BY created_at DESC LIMIT 1[0m
+  Rendered photos/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 408ms (Views: 382.5ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT  "photos".* FROM "photos"  ORDER BY created_at DESC LIMIT 1[0m
+  Rendered photos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 106ms (Views: 102.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction

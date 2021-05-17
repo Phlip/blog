@@ -1,0 +1,2 @@
+class ScannerController < ApplicationController
+end
